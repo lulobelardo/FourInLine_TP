@@ -7,6 +7,11 @@ def tableroVacio():
           [0, 0, 0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0, 0, 0],
           ]
+def secuenciaValida(secuencia):
+  for columna in secuencia:
+    if columna > 7 or columna < 1:
+      return False
+  return True
 
 def soltarFichaEnColumna(ficha, columna, tablero):
   for fila in range(6, 0, -1):
@@ -30,10 +35,7 @@ def dibujarTablero(tablero):
 
 
 secuencia = [1, 2, 3, 1, 5, 6, 3]
-
-dibujarTablero(
-        completarTableroEnOrden(
-                secuencia, tableroVacio()
-        )
-)
-
+if secuenciaValida(secuencia):
+  dibujarTablero(completarTableroEnOrden(secuencia, tableroVacio()))
+else:
+  print('Secuencia Invalida')
