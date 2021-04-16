@@ -21,6 +21,17 @@ def contenidoFila(nro_fila, tablero):
     if indice == nro_fila - 1:
       return fila
 
+#Clase 4
+def filasTablero(tablero):
+  return tablero
+
+#Clase 4
+def columnasTablero(tablero):
+  columnas = []
+  for columna in range(0,7):
+    columnas.insert(0,contenidoColumna(columna, tablero))
+  return columnas
+
 #Clase 2
 def secuenciaValida(secuencia):
   for columna in secuencia:
