@@ -57,14 +57,16 @@ def completarTableroEnOrden(secuencia, tablero):
 #Clase 1
 def dibujarTablero(tablero):
   for fila in range(0, 6):
+    print('|', end='  ')
     for casilla in range(0, 7):
       print(str(tablero[fila][casilla]).replace('0',' '), end='  ')
-    print()
+    print('|')
+  print('+-----------------------+')
 
 #####
 
 tablero = []
-secuencia = [1, 2, 3, 1, 5, 6, 3]
+secuencia = [1, 2, 3, 1, 5, 6, 3, 7]
 if secuenciaValida(secuencia):
   tablero = completarTableroEnOrden(secuencia, tableroVacio())
   dibujarTablero(tablero)
