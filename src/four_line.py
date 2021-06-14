@@ -28,8 +28,8 @@ def filasTablero(tablero):
 #Clase 4
 def columnasTablero(tablero):
   columnas = []
-  for columna in range(0,7):
-    columnas.insert(0,contenidoColumna(columna, tablero))
+  for columna in range(1,8):
+    columnas.append(contenidoColumna(columna, tablero))
   return columnas
 
 #Clase 2
