@@ -14,4 +14,4 @@ python ./src/four_line.py
 ```sh
 python -m py.test -s
 ```
-> Nota: El _-s_ es fundamental para poder realizar el input que requiere el programa previo al test
+> Nota: El `-s` es fundamental para poder realizar el input que requiere el programa previo al test
