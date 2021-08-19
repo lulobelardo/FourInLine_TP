@@ -65,10 +65,12 @@ def dibujarTablero(tablero):
 
 #####
 
-secuencia_texto = input("Ingrese la secuencia de numeros: ")
-secuencia = []
-for items in secuencia_texto.split(','):
-  secuencia.append(int(items))
+secuencia = [1,5,6,4,2,3,1,5]
+
+#secuencia_texto = input("Ingrese la secuencia de numeros: ")
+#secuencia = []
+#for items in secuencia_texto.split(','):
+#  secuencia.append(int(items))
 
 tablero = []
 if secuenciaValida(secuencia):
